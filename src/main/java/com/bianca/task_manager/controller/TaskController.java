@@ -2,6 +2,7 @@ package com.bianca.task_manager.controller;
 
 import com.bianca.task_manager.entity.Task;
 import com.bianca.task_manager.service.TaskService;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class TaskController {
     }
 
     @PostMapping
-    List<Task> create(@RequestBody Task task) {
+    List<Task> create(@RequestBody @Valid Task task) {
         return taskService.create(task);
     }
 
