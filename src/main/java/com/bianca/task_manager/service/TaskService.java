@@ -35,4 +35,8 @@ public class TaskService {
         taskRepository.deleteById(id);
         return listAll();
     }
+
+    public List<Task> findByDone(boolean done){
+        return taskRepository.findByDone(done);
+    }
 }
