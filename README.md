@@ -2,7 +2,7 @@
 
 A **To-Do List** project built with **Spring Boot**, providing a REST API for task management, persistence with **MySQL**, and automatic documentation using **SpringDoc OpenAPI 3**.
 
----
+
 
 ## Technologies Used
 
@@ -12,7 +12,7 @@ A **To-Do List** project built with **Spring Boot**, providing a REST API for ta
 - **MySQL** – Relational database for storing tasks
 - **SpringDoc OpenAPI 3** – Automatic API documentation (Swagger UI)
 
----
+
 
 ## Features
 
@@ -20,7 +20,7 @@ A **To-Do List** project built with **Spring Boot**, providing a REST API for ta
 - Filter tasks by status (completed or pending)
 - Interactive API documentation with Swagger UI
 
----
+
 
 ## How to Run
 
@@ -53,7 +53,7 @@ spring.jpa.show-sql=true
 - REST Endpoints: `http://localhost:8080/tasks`
 - Swagger UI: `http://localhost:8080/swagger-ui.html`
 
----
+
 
 ## API Endpoints
 
@@ -102,13 +102,6 @@ spring.jpa.show-sql=true
   ]
 ```
 
-- **Remove task:**
-```
-  DELETE /tasks/1
-  
-  []
-```
-
 - **Filter task by status:**
 ```
   GET /tasks/status?done=true
@@ -122,4 +115,11 @@ spring.jpa.show-sql=true
         "priority": 2
       }
   ]
+```
+
+- **Remove task:**
+```
+  DELETE /tasks/1
+  
+  []
 ```
